@@ -1,0 +1,55 @@
+.dropdown {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+}
+.button {
+  margin: 10px 50px;
+  width: 100%;
+  border: none;
+  padding: 10px 10px;
+  background-color: white;
+  color: #52bd94;
+  cursor: pointer;
+  text-align: left;
+  font-family: Tahoma;
+}
+.blue-box {
+  border: 2px solid rgb(90, 160, 190);
+  display: flex;
+  flex-direction: column;
+  margin: 5px 50px;
+  width: 100%;
+  padding: 10px 20px;
+}
+select {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 15px;
+  transition: all 300ms;
+  margin: 4px;
+}
+.select {
+  margin: 1px 50px;
+  width: 100%;
+}
+
+.heading {
+  font-weight: bold;
+  background-color: rgb(77, 214, 214);
+  color: white;
+  padding: 20px;
+  z-index: 1;
+}
+
+.heading {
+  font-weight: bold;
+  background-color: rgb(77, 214, 214);
+  color: white;
+  padding: 20px;
+}

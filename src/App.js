@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Segment from "./Customerlab";
+import Button from "react-bootstrap/Button";
 
 function App() {
+  const [Popup, setPopup] = useState(false);
+  const openmodel = () => {
+    setPopup(!Popup);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div>
+        {Popup ? <Segment setTrigger={() => openmodel()} /> : null}
+        <h2 className="heading">View Audience</h2>
+        <div>
+          <Button
+            className="save-seg"
+            onClick={() => {
+              setPopup(true);
+            }}
+          >
+            Save Segment
+          </Button>
+        </div>
+      </div>
     </div>
   );
 }
